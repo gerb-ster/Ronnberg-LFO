@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
@@ -1814,10 +1815,14 @@ design rules under a new name.</description>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -1918,27 +1923,27 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="resistor" package="C050-025X075" value="0.01u" x="50.165" y="36.83" smashed="yes" rot="R270">
+<element name="C1" library="resistor" package="C050-025X075" value=".01uF" x="50.165" y="36.83" smashed="yes" rot="R270">
 <attribute name="NAME" x="47.625" y="34.925" size="1.016" layer="25" font="vector" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="48.006" y="32.131" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="C2" library="resistor" package="C050-025X075" value="1u" x="45.72" y="36.83" smashed="yes" rot="R270">
+<element name="C2" library="resistor" package="C050-025X075" value="1uF" x="45.72" y="36.83" smashed="yes" rot="R270">
 <attribute name="NAME" x="43.18" y="34.925" size="1.016" layer="25" font="vector" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="44.069" y="38.481" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="C3" library="resistor" package="C050-025X075" value="0.068u" x="53.34" y="36.83" smashed="yes" rot="R270">
+<element name="C3" library="resistor" package="C050-025X075" value=".068uF" x="53.34" y="36.83" smashed="yes" rot="R270">
 <attribute name="NAME" x="55.245" y="41.91" size="1.016" layer="25" font="vector" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="54.991" y="40.259" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="C4" library="resistor" package="E2,5-5" value="" x="14.605" y="33.655" smashed="yes" rot="R90">
+<element name="C4" library="resistor" package="E2,5-5" value="10uF/25v" x="14.605" y="33.655" smashed="yes" rot="R90">
 <attribute name="NAME" x="18.415" y="33.02" size="1.016" layer="25" font="vector" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="17.018" y="36.068" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="C5" library="resistor" package="E2,5-5" value="" x="14.605" y="40.005" smashed="yes" rot="R270">
+<element name="C5" library="resistor" package="E2,5-5" value="10uF/25v" x="14.605" y="40.005" smashed="yes" rot="R270">
 <attribute name="NAME" x="18.415" y="39.243" size="1.016" layer="25" font="vector" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="12.192" y="37.592" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="C7" library="resistor" package="E2,5-5" value="" x="73.9775" y="32.0675" smashed="yes" rot="R270">
+<element name="C7" library="resistor" package="E2,5-5" value="1uF/50v" x="73.9775" y="32.0675" smashed="yes" rot="R270">
 <attribute name="NAME" x="77.7875" y="32.893" size="1.016" layer="25" font="vector" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="71.5645" y="29.6545" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
@@ -1982,13 +1987,13 @@ design rules under a new name.</description>
 <attribute name="NAME" x="71.12" y="39.6875" size="1.016" layer="25" font="vector" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="72.39" y="32.385" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="SAW_OUT" library="gerbster" package="PJ301BM" value="PJ301BMPJ301BM" x="85.725" y="20.955" smashed="yes" rot="R90">
+<element name="SAW_OUT" library="gerbster" package="PJ301BM" value="" x="85.725" y="20.955" smashed="yes" rot="R90">
 <attribute name="NAME" x="84.455" y="17.78" size="1.016" layer="25" font="vector" rot="R90"/>
 </element>
-<element name="SIN_OUT" library="gerbster" package="PJ301BM" value="PJ301BMPJ301BM" x="85.725" y="6.985" smashed="yes" rot="R90">
+<element name="SIN_OUT" library="gerbster" package="PJ301BM" value="" x="85.725" y="6.985" smashed="yes" rot="R90">
 <attribute name="NAME" x="84.455" y="4.445" size="1.016" layer="25" font="vector" rot="R90"/>
 </element>
-<element name="SQR_OUT" library="gerbster" package="PJ301BM" value="PJ301BMPJ301BM" x="97.155" y="13.97" smashed="yes" rot="R90">
+<element name="SQR_OUT" library="gerbster" package="PJ301BM" value="" x="97.155" y="13.97" smashed="yes" rot="R90">
 <attribute name="NAME" x="95.885" y="10.795" size="1.016" layer="25" font="vector" rot="R90"/>
 </element>
 <element name="R6" library="resistor" package="0207/10" value="47k" x="22.225" y="43.815" smashed="yes">
@@ -2062,9 +2067,9 @@ design rules under a new name.</description>
 <element name="PWR" library="con-ml" package="ML10" value="" x="5.715" y="41.275" smashed="yes" rot="R270">
 <attribute name="MF" value="" x="5.715" y="41.275" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="5.715" y="41.275" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="11.43" y="43.18" size="1.016" layer="25" font="vector" ratio="10" rot="R90"/>
 <attribute name="OC_FARNELL" value="unknown" x="5.715" y="41.275" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="5.715" y="41.275" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="11.43" y="43.18" size="1.016" layer="25" font="vector" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="10.795" y="41.275" size="1.778" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="LED1" library="led" package="LED5MM" value="" x="20.955" y="13.97" smashed="yes" rot="R90">
@@ -2079,19 +2084,19 @@ design rules under a new name.</description>
 <attribute name="NAME" x="27.305" y="36.83" size="1.016" layer="25" font="vector" ratio="10"/>
 <attribute name="VALUE" x="32.1056" y="38.1" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="T3" library="transistor" package="TO92-CBE" value="" x="20.955" y="36.195" smashed="yes" rot="R270">
+<element name="T3" library="transistor" package="TO92-CBE" value="BC550C" x="20.955" y="36.195" smashed="yes" rot="R270">
 <attribute name="NAME" x="19.05" y="34.925" size="1.016" layer="25" font="vector" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="17.653" y="38.735" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="C8" library="resistor" package="C025-024X044" value="" x="81.915" y="47.625" smashed="yes" rot="R90">
+<element name="C8" library="resistor" package="C025-024X044" value=".1uF" x="81.915" y="47.625" smashed="yes" rot="R90">
 <attribute name="NAME" x="81.0895" y="49.9745" size="1.016" layer="25" font="vector" ratio="10"/>
 <attribute name="VALUE" x="84.582" y="45.847" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="C9" library="resistor" package="C025-024X044" value="" x="29.845" y="50.165" smashed="yes" rot="R270">
+<element name="C9" library="resistor" package="C025-024X044" value=".1uF" x="29.845" y="50.165" smashed="yes" rot="R270">
 <attribute name="NAME" x="30.48" y="45.72" size="1.016" layer="25" font="vector" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="27.178" y="51.943" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="C10" library="resistor" package="C025-024X044" value="" x="42.545" y="46.355" smashed="yes" rot="R270">
+<element name="C10" library="resistor" package="C025-024X044" value=".1uF" x="42.545" y="46.355" smashed="yes" rot="R270">
 <attribute name="NAME" x="43.18" y="48.895" size="1.016" layer="25" font="vector" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="39.878" y="48.133" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
@@ -2180,11 +2185,11 @@ design rules under a new name.</description>
 <attribute name="NAME" x="85.09" y="33.655" size="1.016" layer="25" font="vector" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="82.6008" y="33.3502" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="C11" library="resistor" package="C025-024X044" value="" x="88.5825" y="31.115" smashed="yes">
+<element name="C11" library="resistor" package="C025-024X044" value=".1uF" x="88.5825" y="31.115" smashed="yes">
 <attribute name="NAME" x="90.4875" y="33.655" size="1.016" layer="25" font="vector" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="86.8045" y="28.448" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="C12" library="resistor" package="C025-024X044" value="" x="97.79" y="41.5925" smashed="yes" rot="R180">
+<element name="C12" library="resistor" package="C025-024X044" value=".1uF" x="97.79" y="41.5925" smashed="yes" rot="R180">
 <attribute name="NAME" x="94.2975" y="43.18" size="1.016" layer="25" font="vector" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="99.568" y="44.2595" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
@@ -2779,6 +2784,13 @@ design rules under a new name.</description>
 <wire x1="15.875" y1="11.47" x2="15.875" y2="11.43" width="0.4064" layer="1"/>
 </signal>
 </signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
 </board>
 </drawing>
 </eagle>
